@@ -1,0 +1,8 @@
+FACE RECOGNITION USING EIGEN VALUES
+Much of the previous work on face recognition has ignored the issue of what aspects of the face stimulus are important for identification. This suggested to approach with a coding and decoding of face images, which may give insight into information content of face images, emphasising the local and global features of face.
+In general words, we want to extract the relevant information from an image, encode it in the most efficient way possible, and compare it with a database of models encoded similarly. In mathematical way, we wish to find the PCA of the distribution of faces, or the eigen vectors of the covariance matrix, treating each image as a point in space.
+The basis of the eigenfaces method is the Principal Component Analysis (PCA). Eigenfaces and PCA have been used by Sirovich and Kirby to represent the face images efficiently. They have started with a group of original face images, and calculated the best vector system for image compression. Then Turk and Pentland applied the Eigenfaces to face recognition problem. 
+
+Main advantages of the PCA are its low sensitivity to noise, the reduction of the requirements of the memory and the capacity, and the increase in the efficiency due to the operation in a space of smaller dimensions.
+
+The strategy of the Eigenfaces method consists of extracting the characteristic features on the face and representing the face in question as a linear combination of the so called ‘eigenfaces’ obtained from the feature extraction process. The principal components of the faces in the training set are calculated. Recognition is achieved using the projection of the face into the space formed by the eigenfaces
